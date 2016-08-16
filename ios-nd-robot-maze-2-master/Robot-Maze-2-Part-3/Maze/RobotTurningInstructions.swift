@@ -50,15 +50,7 @@ extension ControlCenter {
         } else {
             robot.rotateLeft()
         }
-//        else if robot.direction == .Left && wallInfo.up {
-//            robot.rotateLeft()
-//        } else if robot.direction == .Down && wallInfo.left {
-//            robot.rotateLeft()
-//        } else if robot.direction == .Right && wallInfo.down {
-//            robot.rotateLeft()
-//        } else if robot.direction == .Up && wallInfo.right {
-//            robot.rotateLeft()
-//        }
+
     }
 
 }

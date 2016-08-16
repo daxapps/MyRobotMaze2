@@ -22,21 +22,13 @@ class ControlCenter {
         
         if isThreeWayJunction && robotIsBlocked {
             randomlyRotateRightOrLeft(myRobot)
-        }
-        if isThreeWayJunction && !robotIsBlocked {
+        } else if isThreeWayJunction && !robotIsBlocked {
             continueStraightOrRotate(myRobot, wallInfo: myWallInfo)
         }
         
-//        if isTwoWayPath && !robotIsBlocked {
-//            myRobot.move()
-//        }
-//        if isTwoWayPath && robotIsBlocked {
-//            turnTowardClearPath(myRobot, wallInfo: myWallInfo)
-//        }
-        
         if isDeadEnd {
             if robotIsBlocked {
-                turnTowardClearPath(myRobot, wallInfo: myWallInfo)
+                randomlyRotateRightOrLeft(myRobot)
             } else {
                 myRobot.move()
             }
