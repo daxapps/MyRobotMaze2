@@ -31,10 +31,9 @@ class ControlCenter {
         // Step 1.4
         // TODO: Write an if statement that enables the robot to choose how to move. Use the pseudocode below as a guide.
         
-        // Pseudocode
         if robotIsBlocked{
             randomlyRotateRightOrLeft(myRobot)
-        }else{
+        } else {
             continueStraightOrRotate(myRobot)
         }
     }

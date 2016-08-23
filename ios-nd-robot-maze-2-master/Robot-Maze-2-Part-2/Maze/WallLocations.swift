@@ -39,6 +39,7 @@ extension ControlCenter {
     }
     
     func checkWalls(robot:ComplexRobotObject) -> (up: Bool, right: Bool, down: Bool, left: Bool, numberOfWalls: Int) {
+        
         var numberOfWalls = 0
         let cell = mazeController.currentCell(robot)
         

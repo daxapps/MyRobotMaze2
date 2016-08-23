@@ -28,7 +28,7 @@ class ControlCenter {
         
         if isDeadEnd {
             if robotIsBlocked {
-                randomlyRotateRightOrLeft(myRobot)
+                myRobot.rotateRight()
             } else {
                 myRobot.move()
             }
